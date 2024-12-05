@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Preguntas</title>
+  <!-- Incluye Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos personalizados */
+    body {
+      background-color: #1c1c1c; /* Fondo oscuro */
+      color: #ffffff; /* Texto blanco */
+    }
+    .form-container {
+      background-color: #333333; /* Fondo gris oscuro para contenedor */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+    }
+    .form-label {
+      color: #cccccc; /* Texto gris claro */
+    }
+    .custom-radio .custom-control-label::before {
+      background-color: #444444; /* Color para botones de opción */
+    }
+    .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #007bff; /* Azul para las opciones seleccionadas */
+    }
+    .btn-submit {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+    }
+    .btn-submit:hover {
+      background-color: #0056b3;
+    }
+    .response-section {
+      text-align: center;
+      color: #cccccc;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #222;
+      color: #888;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* Estilos de la sección de encabezado */
+
+
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Puedes ajustar la altura según tus necesidades */
+    background-image: url("imagen\ 1.avif"); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.image-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+  </style>
+
+<!-- Metadatos Open Graph -->
+<meta property="og:title" content="Título de tu página">
+<meta property="og:description" content="Descripción de tu página o formulario.">
+<meta property="og:image" content="https://personaleconomyra.netlify.app/images/thumbnail.jpg">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Código correcto de Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7108053867508944",
+          enable_page_level_ads: true
+     });
+</script>
+
+</head>
+<body>
+    <!-- Sección de encabezado con imagen -->
+    <!-- Sección de Imagen con Texto en Medio -->
+    <section class="image-section d-flex align-items-center justify-content-center text-center">
+      <h1 class="text-white">¿Que tan probable es que tengas una mejor economia en 5 años?</h1>
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-center" id="form">
+      <div class="col-md-8">
+        <div class="form-container">
+          <h2 class="text-center mb-4">Contesta cuidadosamente, esperamos que te vaya bien.</h2>
+          <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <div class="form-group">
+              <label class="form-label">1. ¿Qué haces cuando recibes un ingreso extra inesperado?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1a" name="q1" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q1a">Analizo los errores y ajusto mis métodos de ahorro y gasto.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1b" name="q1" class="custom-control-input">
+                <label class="custom-control-label" for="q1b">Pido consejo financiero para reestructurar mis objetivos.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1c" name="q1" class="custom-control-input">
+                <label class="custom-control-label" for="q1c">Me ajusto y guardo todo lo que pueda por un tiempo.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1d" name="q1" class="custom-control-input">
+                <label class="custom-control-label" for="q1d">Cambio las metas para hacerlas más alcanzables.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">2. ¿Cada cuánto revisas tus metas financieras?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q2a" name="q2" class="custom-control-input">
+                <label class="custom-control-label" for="q2a">Cada mes, para asegurar que estoy en el camino correcto.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q2b" name="q2" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q2b">Al inicio del año, y hago ajustes a mitad de año si es necesario.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q2c" name="q2" class="custom-control-input">
+                <label class="custom-control-label" for="q2c">Solo cuando me doy cuenta de que he gastado demasiado y necesito un plan.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q2d" name="q2" class="custom-control-input">
+                <label class="custom-control-label" for="q2d">Las reviso al final de cada trimestre para evaluar si puedo mejorar mi rendimiento.</label>
+              </div>
+            </div>
+              <!-- Repite para preguntas 2-5 -->
+              <div class="form-group">
+                <label class="form-label">3. Si tienes una gran oportunidad de inversión, ¿cuál sería tu primera reacción?</label>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="q3a" name="q3" class="custom-control-input">
+                  <label class="custom-control-label" for="q3a">Me dedico a investigar por mi cuenta para tomar una decisión en los próximos días.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="q3b" name="q3" class="custom-control-input">
+                  <label class="custom-control-label" for="q3b">Considero cuánto puedo destinar sin afectar mis ahorros de emergencia.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="q3c" name="q3" class="custom-control-input">
+                  <label class="custom-control-label" for="q3c">Analizo rápidamente las cifras y, si parecen prometedoras, decido sin mucha demora.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="q3d" name="q3" class="custom-control-input" value="correct">
+                  <label class="custom-control-label" for="q3d">Consultar con un experto para asegurarme de entender los riesgos.</label>
+                </div>
+              </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">4. ¿Qué harías si alguien cercano necesita apoyo económico importante?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q4a" name="q4" class="custom-control-input">
+                <label class="custom-control-label" for="q4a">Apoyo con lo que puedo sin esperar reembolso, confío en que me devolverán cuando puedan.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q4b" name="q4" class="custom-control-input">
+                <label class="custom-control-label" for="q4b">Pienso en una solución para ambos, sugiriendo que busque otra fuente de apoyo además de mi ayuda.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q4c" name="q4" class="custom-control-input">
+                <label class="custom-control-label" for="q4c">Ofrezco la ayuda, pero le pido que me dé garantías por el préstamo.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q4d" name="q4" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q4d">Ofrezco un préstamo con plazos claros de pago para no afectar mis finanzas. </label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">5. ¿Cómo divides tu ingreso mensual entre gastos, ahorros e inversiones?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q5a" name="q5" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q5a">Establezco un porcentaje fijo para gastos, ahorro e inversión, sin importar el ingreso. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q5b" name="q5" class="custom-control-input">
+                <label class="custom-control-label" for="q5b">Lo reparto según mis necesidades cada mes, ajustando lo que queda para ahorrar.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q5c" name="q5" class="custom-control-input">
+                <label class="custom-control-label" for="q5c">Priorizo mis gastos y, si sobra algo, lo invierto o ahorro según el caso.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q5d" name="q5" class="custom-control-input">
+                <label class="custom-control-label" for="q5d">Trato de ahorrar lo más posible y, si encuentro una buena inversión, destinaré una parte de los ahorros.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">6. Si recibieras una oferta de crédito con beneficios, ¿cómo la evaluarías?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q6a" name="q6" class="custom-control-input">
+                <label class="custom-control-label" for="q6a">La acepto si la tasa de interés es baja, ya que podría ser útil en el futuro.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q6b" name="q6" class="custom-control-input">
+                <label class="custom-control-label" for="q6b">Considero si lo necesito de inmediato; si no, prefiero dejarlo pasar.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q6c" name="q6" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q6c">Analizo cuánto me costaría en intereses y si puedo pagarlo sin afectar mi ahorro. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q6d" name="q6" class="custom-control-input">
+                <label class="custom-control-label" for="q6d">La tomo y dejo el dinero guardado en caso de emergencia o si surge una oportunidad de gasto.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">7. ¿Cómo abordas la idea de generar ingresos adicionales?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q7a" name="q7" class="custom-control-input">
+                <label class="custom-control-label" for="q7a">Siempre estoy atento a oportunidades y pruebo cosas nuevas si no requieren mucho tiempo.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q7b" name="q7" class="custom-control-input">
+                <label class="custom-control-label" for="q7b">Busco trabajos freelance o temporales cuando siento que necesito más ingresos.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q7c" name="q7" class="custom-control-input">
+                <label class="custom-control-label" for="q7c">Solo lo considero si mis gastos empiezan a superar mi ingreso regular.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q7d" name="q7" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q7d">Exploro posibilidades de ingresos pasivos o inversiones que no dependan del tiempo. </label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">8. ¿Cómo manejarías un imprevisto económico, como una emergencia médica o una reparación costosa?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q8a" name="q8" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q8a">Uso mis ahorros para emergencias sin afectar mis finanzas a largo plazo. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q8b" name="q8" class="custom-control-input">
+                <label class="custom-control-label" for="q8b">Pago con una tarjeta de crédito, ya que puedo devolver el dinero más adelante.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q8c" name="q8" class="custom-control-input">
+                <label class="custom-control-label" for="q8c">Solicito un préstamo o ayuda temporal a alguien cercano.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q8d" name="q8" class="custom-control-input">
+                <label class="custom-control-label" for="q8d">Aplazo el gasto hasta que tenga suficientes fondos.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">9. Si ves una gran oferta en un producto que quieres, pero no necesitas de inmediato, ¿qué haces?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9a" name="q9" class="custom-control-input">
+                <label class="custom-control-label" for="q9a">Lo compro para aprovechar el descuento.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9b" name="q9" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q9b">Evalúo si puedo integrarlo en mi presupuesto y decidir.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9c" name="q9" class="custom-control-input">
+                <label class="custom-control-label" for="q9c">Lo dejo pasar y prefiero guardar para compras necesarias.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q9d" name="q9" class="custom-control-input">
+                <label class="custom-control-label" for="q9d">Considero usar crédito para obtenerlo sin descapitalizarme.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">10. ¿Cómo definirías tu relación con las deudas?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q10a" name="q10" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q10a">Solo las utilizo para inversiones que generen ingresos. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q10b" name="q10" class="custom-control-input">
+                <label class="custom-control-label" for="q10b">Las uso cuando no tengo otra opción para cubrir gastos.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q10c" name="q10" class="custom-control-input">
+                <label class="custom-control-label" for="q10c">Prefiero evitar las deudas en cualquier circunstancia.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q10d" name="q10" class="custom-control-input">
+                <label class="custom-control-label" for="q10d">Las utilizo si ofrecen beneficios, como puntos o recompensas.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">11. Si tienes un aumento salarial, ¿cómo planeas distribuir ese ingreso adicional?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q11a" name="q11" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q11a">Ahorro la mayor parte y aumento mis contribuciones a la jubilación.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q11b" name="q11" class="custom-control-input">
+                <label class="custom-control-label" for="q11b">Lo destino a mejorar mi calidad de vida y algo para el ahorro.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q11c" name="q11" class="custom-control-input">
+                <label class="custom-control-label" for="q11c">Me doy algunos gustos y el resto lo ahorro.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q11d" name="q11" class="custom-control-input">
+                <label class="custom-control-label" for="q11d">Lo invierto todo para maximizar el retorno.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">12. ¿Cómo decides cuándo es un buen momento para gastar en un lujo o capricho?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q12a" name="q12" class="custom-control-input">
+                <label class="custom-control-label" for="q12a">Lo hago cada vez que siento que lo merezco.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q12b" name="q12" class="custom-control-input">
+                <label class="custom-control-label" for="q12b">Aprovecho el crédito y pago luego.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q12c" name="q12" class="custom-control-input">
+                <label class="custom-control-label" for="q12c">Solo cuando tengo excedentes en mis ahorros.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q12d" name="q12" class="custom-control-input">
+                <label class="custom-control-label" for="q12d">Lo hago de vez en cuando, sin mucha planificación.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">13. ¿Cómo reaccionas ante cambios en la economía, como una recesión o inflación?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q13a" name="q13" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q13a">Ajusto mis gastos y busco maneras de ahorrar más.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q13b" name="q13" class="custom-control-input">
+                <label class="custom-control-label" for="q13b">No cambio mucho mi rutina; confío en que la situación se estabilizará.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q13c" name="q13" class="custom-control-input">
+                <label class="custom-control-label" for="q13c">Intento aprovechar ofertas y descuentos mientras duren.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q13d" name="q13" class="custom-control-input">
+                <label class="custom-control-label" for="q13d">Cambio mi estrategia de inversión para buscar refugios más seguros.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">14. Si tienes un objetivo financiero a 5 años, ¿qué estrategia prefieres?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q14a" name="q14" class="custom-control-input">
+                <label class="custom-control-label" for="q14a">Me centro en los primeros 3 años y ajusto luego si es necesario.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q14b" name="q14" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q14b">Divido el objetivo en pasos anuales y evalúo cada año. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q14c" name="q14" class="custom-control-input">
+                <label class="custom-control-label" for="q14c">Guardo lo que puedo cada mes sin metas específicas.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q14d" name="q14" class="custom-control-input">
+                <label class="custom-control-label" for="q14d">Dejo que los ingresos extra lo impulsen cuando los tenga.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">15. ¿Cuál es tu enfoque cuando encuentras una oportunidad de inversión con un riesgo moderado?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q15a" name="q15" class="custom-control-input">
+                <label class="custom-control-label" for="q15a">Solo invierto si puedo retirar en cualquier momento.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q15b" name="q15" class="custom-control-input">
+                <label class="custom-control-label" for="q15b">La tomo rápidamente antes de que alguien más la aproveche.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q15c" name="q15" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q15c">Evalúo el riesgo y consulto con expertos antes de decidir. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q15d" name="q15" class="custom-control-input">
+                <label class="custom-control-label" for="q15d">Decido según lo que he leído en blogs o redes sociales.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">16. ¿Cómo prefieres manejar tus fondos para el retiro?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q16a" name="q16" class="custom-control-input">
+                <label class="custom-control-label" for="q16a">Ahorro regularmente en una cuenta de alto rendimiento.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q16b" name="q16" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q16b">Aprovecho herramientas de inversión a largo plazo. (</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q16c" name="q16" class="custom-control-input">
+                <label class="custom-control-label" for="q16c">Contribuyo solo cuando tengo ingresos adicionales.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q16d" name="q16" class="custom-control-input">
+                <label class="custom-control-label" for="q16d">No tengo una estrategia fija, solo lo que puedo guardar.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">17. ¿Qué haces si te das cuenta de que no estás cumpliendo tus metas financieras?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q17a" name="q17" class="custom-control-input">
+                <label class="custom-control-label" for="q17a">Pido consejo financiero para reestructurar mis objetivos.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q17b" name="q17" class="custom-control-input">
+                <label class="custom-control-label" for="q17b">Me ajusto y guardo todo lo que pueda por un tiempo.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q17c" name="q17" class="custom-control-input">
+                <label class="custom-control-label" for="q17c">Cambio las metas para hacerlas más alcanzables.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q17d" name="q17" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q17d">Analizo los errores y ajusto mis métodos de ahorro y gasto. </label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">18. ¿Cómo reaccionas ante los consejos financieros que te dan familiares o amigos?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q18a" name="q18" class="custom-control-input" value="correct">
+                <label class="custom-control-label" for="q18a">Los escucho, pero solo aplico lo que se adapta a mis objetivos. </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q18b" name="q18" class="custom-control-input">
+                <label class="custom-control-label" for="q18b">Tomo en cuenta sus sugerencias y ajusto mi plan.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q18c" name="q18" class="custom-control-input">
+                <label class="custom-control-label" for="q18c">Los sigo al pie de la letra si veo que han tenido éxito.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q18d" name="q18" class="custom-control-input">
+                <label class="custom-control-label" for="q18d">Prefiero seguir mi propio criterio sin influencia externa.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">19. Si quisieras mejorar tus ingresos, ¿qué estrategia explorarías primero?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q19a" name="q19" class="custom-control-input">
+                <label class="custom-control-label" for="q19a">Considero proyectos adicionales, como freelance o servicios.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q19b" name="q19" class="custom-control-input">
+                <label class="custom-control-label" for="q19b">Buscaría un aumento en mi trabajo actual.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q19c" name="q19" class="custom-control-input">
+                <label class="custom-control-label" for="q19c">Me capacitaría en nuevas habilidades antes de explorar opciones.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q19d" name="q19" class="custom-control-input">
+                <label class="custom-control-label" for="q19d">Me capacitaría en nuevas habilidades antes de explorar opciones.
+                  Buscaría ingresos pasivos para no depender solo del trabajo.</label>
+              </div>
+            </div>
+            <!-- Repite para preguntas 2-5 -->
+            <div class="form-group">
+              <label class="form-label">20. Cuando piensas en el futuro, ¿cómo visualizas tu situación económica ideal?</label>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q20a" name="q20" class="custom-control-input">
+                <label class="custom-control-label" for="q20a">Como una situación estable, sin preocupaciones y con suficiente para mis necesidades.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q20b" name="q20" class="custom-control-input" value="correct" >
+                <label class="custom-control-label" for="q20b">Independiente y con ingresos pasivos que sostengan mi estilo de vida</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q20c" name="q20" class="custom-control-input">
+                <label class="custom-control-label" for="q20c">Con un ahorro significativo y capacidad de adquirir bienes cuando quiera.</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q20d" name="q20" class="custom-control-input">
+                <label class="custom-control-label" for="q20d">Con inversiones que me permitan tomar riesgos y vivir bien.</label>
+              </div>
+            </div>
+            
+            <!-- Preguntas 3 a 5: Copia la estructura de arriba y ajusta las opciones -->
+            
+            <!-- Botón de envío -->
+            <button type="button" class="btn btn-submit w-100" onclick="checkAnswers()">Enviar</button>
+          </form>
+          
+          <!-- Sección de respuesta -->
+          <div class="response-section" id="result">
+            <!-- Aquí se mostrará el resultado -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 - Ricardo Avalos</p>
+  </footer>
+
+  <!-- Scripts de Bootstrap y script personalizado -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
